@@ -18,7 +18,7 @@ public class Demo implements EntryPoint {
         
         ap.add(box);
         
-        Ease.inOut(Transitions.SIXT, new Updater() {
+        Ease.out(Transitions.BOUNCE, new Updater() {
             @Override
             public void update(double progress) {
                 ap.setWidgetPosition(box, (int) (500 * progress), 10);
